@@ -1,5 +1,5 @@
-hello: hello.o
-	$(CC) -o $@ hello.o
+myhello: main.o hello.o
+	$(CC) -o $@ main.o hello.o
 
 clean:
-	-@rm *.o hello
+	-@rm *.o myhello
